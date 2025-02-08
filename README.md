@@ -52,4 +52,4 @@ My intention is to work through the Learning Paths to continue gaining experianc
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ldg)
+- Frontend Mentor - [@ldg](https://www.frontendmentor.io/profile/ldg)
