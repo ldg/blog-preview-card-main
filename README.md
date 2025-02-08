@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-I used this project to practice Sass. I set up Sass using the Sass command line to link the scss and css files and to watch the files. Additionally, I set up a Sass Function to convert px to rem, or px to em; and used it throught the project.
+I used this project to practice Sass. I set up Sass using the Sass command line to link the scss and css files and to watch the files. Additionally, I set up a Sass Function to convert px to rem, or px to em; and used it throughout the project.
 
 ### Continued development
 
