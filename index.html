@@ -14,16 +14,6 @@
 
 		<title>Frontend Mentor | Blog preview card</title>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -33,15 +23,37 @@
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
-		the backbone of every website, defining structure, content, and
-		presentation. Greg Hooper
-
-		<div class="attribution">
+		<main class="main">
+			<section class="card">
+				<img
+					src="./assets/images/illustration-article.svg"
+					alt="HTML & CSS illustration"
+					class="card__img"
+				/>
+				<button class="card__button">Learning</button>
+				<div class="card__meta">
+					Published <time datetime="2023-12-21">21 Dec 2023</time>
+				</div>
+				<h2 class="card__heading"><a href="">HTML & CSS foundations</a></h2>
+				<p class="card__content">
+					These languages are the backbone of every website, defining structure,
+					content, and presentation.
+				</p>
+				<footer class="card__footer" role="contentinfo">
+					<img
+						src="./assets/images/image-avatar.webp"
+						alt="photo of Greg Hooper"
+					/>
+					<span>Greg Hooper</span>
+				</footer>
+			</section>
+		</main>
+		<footer class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
+			>. Coded by
+			<a href="https://frontendmentor.io/profile/ldg">Scott McIntire</a>.
+		</footer>
 	</body>
 </html>

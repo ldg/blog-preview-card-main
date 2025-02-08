@@ -1,3 +1,130 @@
+/* css custom properties */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
 
+body {
+  background-color: var(--yellow);
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  width: 20.4375rem;
+  border: 1px solid var(--gray-950);
+  border-radius: 1.25em;
+  padding-bottom: 1.5rem;
+  color: var(--gray-950);
+  box-shadow: 10px 10px var(--gray-950);
+}
+@media (min-width: 376px) {
+  .card {
+    width: 24rem;
+  }
+}
+.card .card__img {
+  border-radius: 0.625em;
+  margin: 1.5rem;
+  width: 17.4375em;
+}
+@media (min-width: 376px) {
+  .card .card__img {
+    width: 21rem;
+  }
+}
+.card .card__button {
+  display: block;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 4px;
+  padding-block: 4px;
+  padding-inline: 12px;
+  margin-left: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.card .card__button:hover {
+  background-color: var(--gray-950);
+  color: var(--white);
+}
+@media (min-width: 376px) {
+  .card .card__button {
+    font-size: 0.875rem;
+  }
+}
+.card .card__meta {
+  font-size: 0.75rem;
+  margin-top: 0.75rem;
+  margin-left: 1.5rem;
+}
+@media (min-width: 376px) {
+  .card .card__meta {
+    font-size: 0.875rem;
+  }
+}
+.card .card__heading {
+  margin-left: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+@media (min-width: 376px) {
+  .card .card__heading {
+    font-size: 1.5rem;
+  }
+}
+.card .card__heading a {
+  text-decoration: none;
+  color: var(--gray-950);
+  transition: color 0.3s ease-in-out;
+}
+.card .card__heading a:hover {
+  color: var(--yellow);
+}
+.card .card__content {
+  margin-left: 1.5rem;
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+@media (min-width: 376px) {
+  .card .card__content {
+    font-size: 1rem;
+  }
+}
+.card .card__footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+.card .card__footer img {
+  width: 2rem;
+  height: auto;
+}
+
+.attribution {
+  align-self: end;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,126 @@
+@use './util/' as u;
 
+/* css custom properties */
+:root {
+	--yellow: hsl(47, 88%, 63%);
+	--white: hsl(0, 0%, 100%);
+	--gray-500: hsl(0, 0%, 42%);
+	--gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+	background-color: var(--yellow);
+	font-family: 'Figtree', serif;
+	font-optical-sizing: auto;
+}
+
+.main {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.card {
+	background-color: var(--white);
+	width: u.rem(327);
+	border: 1px solid var(--gray-950);
+	border-radius: u.em(20);
+	padding-bottom: u.rem(24);
+	color: var(--gray-950);
+	box-shadow: 10px 10px var(--gray-950);
+
+	@media (min-width: 376px) {
+		width: u.rem(384);
+	}
+
+	.card__img {
+		border-radius: u.em(10);
+		margin: u.rem(24);
+		width: u.em(279);
+		@media (min-width: 376px) {
+			width: u.rem(336);
+		}
+	}
+
+	.card__button {
+		display: block;
+		background-color: var(--yellow);
+		border: none;
+		border-radius: 4px;
+		padding-block: 4px;
+		padding-inline: 12px;
+		margin-left: u.rem(24);
+		font-size: u.rem(12);
+		font-weight: 900;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+		&:hover {
+			background-color: var(--gray-950);
+			color: var(--white);
+		}
+		@media (min-width: 376px) {
+			font-size: u.rem(14);
+		}
+	}
+
+	.card__meta {
+		font-size: u.rem(12);
+		margin-top: u.rem(12);
+		margin-left: u.rem(24);
+		@media (min-width: 376px) {
+			font-size: u.rem(14);
+		}
+	}
+
+	.card__heading {
+		margin-left: u.rem(24);
+		font-size: u.rem(20);
+		line-height: 1.2;
+		@media (min-width: 376px) {
+			font-size: u.rem(24);
+		}
+		a {
+			text-decoration: none;
+			color: var(--gray-950);
+			transition: color 0.3s ease-in-out;
+
+			&:hover {
+				color: var(--yellow);
+			}
+		}
+	}
+
+	.card__content {
+		margin-left: u.rem(24);
+		color: var(--gray-500);
+		font-size: u.rem(14);
+		line-height: 1.5;
+		@media (min-width: 376px) {
+			font-size: u.rem(16);
+		}
+	}
+
+	.card__footer {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin-left: u.rem(24);
+		font-size: u.rem(14);
+		font-weight: 900;
+		img {
+			width: u.rem(32);
+			height: auto;
+		}
+	}
+}
+
+.attribution {
+	align-self: end;
+	font-size: u.rem(11);
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
