@@ -51,7 +51,7 @@ body {
   padding-block: 4px;
   padding-inline: 12px;
   margin-left: 1.5rem;
-  font-size: 0.75rem;
+  font-size: clamp(12px, 0.8rem, 14px);
   font-weight: 900;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -60,30 +60,15 @@ body {
   background-color: var(--gray-950);
   color: var(--white);
 }
-@media (min-width: 376px) {
-  .card .card__button {
-    font-size: 0.875rem;
-  }
-}
 .card .card__meta {
-  font-size: 0.75rem;
+  font-size: clamp(12px, 0.8rem, 14px);
   margin-top: 0.75rem;
   margin-left: 1.5rem;
 }
-@media (min-width: 376px) {
-  .card .card__meta {
-    font-size: 0.875rem;
-  }
-}
 .card .card__heading {
   margin-left: 1.5rem;
-  font-size: 1.25rem;
+  font-size: clamp(20px, 1.4rem, 24px);
   line-height: 1.2;
-}
-@media (min-width: 376px) {
-  .card .card__heading {
-    font-size: 1.5rem;
-  }
 }
 .card .card__heading a {
   text-decoration: none;
@@ -96,13 +81,8 @@ body {
 .card .card__content {
   margin-left: 1.5rem;
   color: var(--gray-500);
-  font-size: 0.875rem;
+  font-size: clamp(14px, 0.95rem, 16px);
   line-height: 1.5;
-}
-@media (min-width: 376px) {
-  .card .card__content {
-    font-size: 1rem;
-  }
 }
 .card .card__footer {
   display: flex;

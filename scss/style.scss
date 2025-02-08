@@ -51,7 +51,7 @@ body {
 		padding-block: 4px;
 		padding-inline: 12px;
 		margin-left: u.rem(24);
-		font-size: u.rem(12);
+		font-size: clamp(12px, 0.8rem, 14px);
 		font-weight: 900;
 		cursor: pointer;
 		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -60,27 +60,19 @@ body {
 			background-color: var(--gray-950);
 			color: var(--white);
 		}
-		@media (min-width: 376px) {
-			font-size: u.rem(14);
-		}
 	}
 
 	.card__meta {
-		font-size: u.rem(12);
+		font-size: clamp(12px, 0.8rem, 14px);
 		margin-top: u.rem(12);
 		margin-left: u.rem(24);
-		@media (min-width: 376px) {
-			font-size: u.rem(14);
-		}
 	}
 
 	.card__heading {
 		margin-left: u.rem(24);
-		font-size: u.rem(20);
+		font-size: clamp(20px, 1.4rem, 24px);
 		line-height: 1.2;
-		@media (min-width: 376px) {
-			font-size: u.rem(24);
-		}
+
 		a {
 			text-decoration: none;
 			color: var(--gray-950);
@@ -95,11 +87,8 @@ body {
 	.card__content {
 		margin-left: u.rem(24);
 		color: var(--gray-500);
-		font-size: u.rem(14);
+		font-size: clamp(14px, 0.95rem, 16px);
 		line-height: 1.5;
-		@media (min-width: 376px) {
-			font-size: u.rem(16);
-		}
 	}
 
 	.card__footer {
